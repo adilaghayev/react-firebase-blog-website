@@ -20,7 +20,8 @@ function App() {
 
   return (
     <Router>
-      <nav>
+      <nav className="me-auto">
+        <img src="./logo512.png" height={80}/>
         <Link to="/"> Home </Link>
 
         {!isAuth ? (
