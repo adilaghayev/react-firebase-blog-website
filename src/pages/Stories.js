@@ -7,7 +7,7 @@ import {
   CardMedia,
   Typography,
   Box,
-  Grid,
+  Grid2,
 } from "@mui/material";
 
 function Stories() {
