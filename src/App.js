@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
 import Login from "./pages/Login";
 import Stories from "./pages/Stories";
+import StoryDetail from "./components/StoryDetail";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home isAuth={isAuth} />} />
         <Route path="/stories" element={<Stories />} />
+        <Route path="/stories/:id" element={<StoryDetail />} />  {/* Story detail route */}
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
